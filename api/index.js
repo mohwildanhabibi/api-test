@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const db = require("./configs/db.js")
+const db = require("../configs/db.js")
 
 db.sequelize.sync()
 .then(() => {
@@ -16,9 +16,9 @@ db.sequelize.sync()
 app.use(express.json());
 
 // Importing all the routes 
-const homeroute = require("./routes/home.js")
-const loginroute = require("./routes/login")
-const booksroute = require("./routes/books.js")
+const homeroute = require("../routes/home.js")
+const loginroute = require("../routes/login.js")
+const booksroute = require("../routes/books.js")
 
 app.use("/home",homeroute) 
 app.use("/login",loginroute)
