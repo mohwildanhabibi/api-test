@@ -4,9 +4,7 @@
   "description": "new express js project to learn restful api",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon"
+    "start": "node app.js"
   },
   "author": "Moh. Wildan Habibi",
   "license": "ISC",
