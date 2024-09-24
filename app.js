@@ -2,15 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const db = require("./configs/db.js")
+// const db = require("./configs/db.js")
 
-db.sequelize.sync()
-.then(() => {
-  console.log("Synced db.");
-})
-.catch((err) => {
-  console.log("Failed to sync db: " + err.message);
-});
+// db.sequelize.sync()
+// .then(() => {
+//   console.log("Synced db.");
+// })
+// .catch((err) => {
+//   console.log("Failed to sync db: " + err.message);
+// });
 
 // parse requests of content-type - application/json
 app.use(express.json());
